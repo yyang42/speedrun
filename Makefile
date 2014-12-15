@@ -13,6 +13,8 @@ run_test:
 test:
 	@if [ -f $(SRCS_ROOT)/${u}/test_exec.c ]; then make test_exec u=$(u); else make test_fn $(u) ; fi
 
+t: test
+
 test_fn:
 	@gcc $(FLAGS) -I framework framework/framework.c $(SRCS_ROOT)/${u}/test.c sandbox/${u}.c
 	@make run_test
@@ -24,11 +26,22 @@ test_exec:
 start:
 	@touch sandbox/$(u).c
 	@cp sandbox/$(u).c sandbox/$(u).c.bak
+	@echo "================="
+	@cat sandbox/$(u).c
+	@echo "================="
 	@> sandbox/$(u).c
 	@time vim sandbox/$(u).c 
 	@make test u=$(u)
+
+s: start
+
+edit:
+	@vim sandbox/$(u).c 
+
+e: edit
 
 view:
 	@echo $(SRCS_ROOT)/${u}/${u}.c
 	@cat $(SRCS_ROOT)/${u}/${u}.c
 
+v: view
