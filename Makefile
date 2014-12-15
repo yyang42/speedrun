@@ -11,7 +11,7 @@ run_test:
 	@echo "\x1b[32;01mSUCCESS\x1b[0m"
 	
 test:
-	@if [ -f $(SRCS_ROOT)/${u}/test_exec.c ]; then make test_exec u=$(u); else make test_fn $(u) ; fi
+	@if [ -f $(SRCS_ROOT)/${u}/test_exec.c ]; then make test_exec u=$(u); else make test_fn u=$(u) ; fi
 
 t: test
 
@@ -26,9 +26,9 @@ test_exec:
 start:
 	@touch sandbox/$(u).c
 	@cp sandbox/$(u).c sandbox/$(u).c.bak
-	@echo "================="
+	@echo "sandbox/$(u).c.bak"
 	@cat sandbox/$(u).c
-	@echo "================="
+	@echo "------------------------------"
 	@> sandbox/$(u).c
 	@time vim sandbox/$(u).c 
 	@make test u=$(u)
