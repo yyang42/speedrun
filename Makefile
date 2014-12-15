@@ -3,8 +3,10 @@ SRCS_ROOT = ./units
 
 usage:
 	@echo "usage:"
-	@echo "    start u=ft_atoi"
-	@echo "    test u=ft_atoi"
+	@echo "    make u=ft_atoi start # start a timed session"
+	@echo "    make u=ft_atoi test # test your code"
+	@echo "    make u=ft_atoi edit # edit last opened file"
+	@echo "    make u=ft_atoi view # view reference code"
 
 run_test:
 	@./a.out
