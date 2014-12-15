@@ -16,6 +16,8 @@ static void test(char *input, char *exp)
 int	main(void)
 {
 	exec("gcc -Wall -Wextra -Werror sandbox/ulstr.c");
-	test("aBc", "AbC");
+	test("aBc", "AbC\n");
+	test("AaCXYZ", "aAcxyz\n");
+	test("", "\n");
 	return (0);
 }
