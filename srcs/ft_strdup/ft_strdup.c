@@ -1,7 +1,7 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
@@ -10,8 +10,14 @@
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_strcpy(char *d, char *s)
+#include "../ft_strlen/ft_strlen.c"
+#include "../ft_strcpy/ft_strcpy.c"
+
+char	*ft_strdup(char *s)
 {
-	while ((*d++ = *s++))
-		;
+	char *d;
+
+	d = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
+	ft_strcpy(d, s);
+	return (s);
 }
