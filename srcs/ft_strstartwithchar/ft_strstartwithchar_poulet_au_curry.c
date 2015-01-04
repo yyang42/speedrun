@@ -6,9 +6,12 @@
 /*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 20:53:46 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 20:59:18 by juschaef         ###   ########.fr       */
+/*   Updated: 2015/01/04 21:06:58 by juschaef         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stdio.h>
+#include <assert.h>
 
 int		main(void)
 {
