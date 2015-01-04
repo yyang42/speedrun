@@ -1,23 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*   ft_strcmp.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 20:21:02 by yyang             #+#    #+#             */
-/*   Updated: 2015/01/04 20:43:58 by yyang            ###   ########.fr       */
+/*   Updated: 2015/01/04 20:47:09 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-** this version of strcat doesn't return
-*/
-
-void	ft_strcat(char *s1, char *s2)
+int	ft_strcmp(char *s1, char *s2)
 {
-	while (*s1)
-		s1++;
-	while ((*s1++ = *s2++))
-		;
+	while (*s1 == *s2)
+		if (!(*s1++ + *s2++))
+			return (0);
+	return ((unsigned char)*s1 - (unsigned char)*s2);
 }
