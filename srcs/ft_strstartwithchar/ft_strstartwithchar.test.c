@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlen_raclette.c                               :+:      :+:    :+:   */
+/*   ft_strstartwithchar.test.c                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/04 20:57:49 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 21:07:03 by juschaef         ###   ########.fr       */
+/*   Created: 2015/01/04 20:53:46 by juschaef          #+#    #+#             */
+/*   Updated: 2015/01/04 21:11:15 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,10 @@
 
 int		main(void)
 {
-	assert(ft_strlen("abc") == 3);
-	assert(ft_strlen("") == 0);
-	assert(ft_strlen("abcdeabcdeabcdeabcdeabcdeabcdeabcdeabcdeab") == 42);
-    return (0);
+	ft_strstartswith("ab", "ab");
+	assert(ft_strstartswith("abc", "ab") == 1);
+	assert(ft_strstartswith("ab", "a") == 1);
+	assert(ft_strstartswith("a", "ab") == 0);
+	printf("OK ft_strstartswith\n");
+	return (0);
 }

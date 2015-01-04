@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa_lasagne.c                                  :+:      :+:    :+:   */
+/*   ft_strlen.test.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/04 20:55:17 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 21:07:36 by juschaef         ###   ########.fr       */
+/*   Created: 2015/01/04 20:57:49 by juschaef          #+#    #+#             */
+/*   Updated: 2015/01/04 21:09:40 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int		main(void)
 {
-	assert(ft_strcmp(ft_itoa(123), "123") == 0);
-	assert(ft_strcmp(ft_itoa(123), "23") != 0);
-	printf("OK ft_itoa\n");
-	return (s);
+	assert(ft_strlen("abc") == 3);
+	assert(ft_strlen("") == 0);
+	assert(ft_strlen("raclette") == 42);
+    return (0);
 }

@@ -3,12 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 20:55:17 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 20:55:34 by juschaef         ###   ########.fr       */
+/*   Updated: 2015/01/04 21:14:04 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "../ft_strlen/ft_strlen.c"
+#include <stdlib.h>
 
 char	*ft_itoa(int n)
 {
