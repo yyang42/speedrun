@@ -1,24 +1,28 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.test.c                                   :+:      :+:    :+:   */
+/*   ft_bubblesort.test.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/04 20:45:52 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 21:25:29 by juschaef         ###   ########.fr       */
+/*   Created: 2015/01/04 21:33:16 by juschaef          #+#    #+#             */
+/*   Updated: 2015/01/04 21:38:56 by juschaef         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <assert.h>
 #include <stdio.h>
+#include <assert.h>
 
-int		main(void)
+int	main(void)
 {
-	assert(ft_memcmp("", "", 1) == 0);
-	assert(ft_memcmp("ab", "ab", 2) == 0);
-	assert(ft_memcmp("ac", "ab", 2) > 0);
-	assert(ft_memcmp("aa", "ab", 2) < 0);
-	printf("OK ft_strcmp\n");
+	int tab[5] = {8,6,0,42,21};
+	
+	ft_bubblesort(tab, 5);
+	assert(tab[0] == 0);
+	assert(tab[1] == 6);
+	assert(tab[2] == 8);
+	assert(tab[3] == 21);
+	assert(tab[4] == 42);
+	printf("ft_bubblesort OK BITCH !!\n");
 	return (0);
 }
