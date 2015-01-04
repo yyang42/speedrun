@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include <assert.h>
-#include <strings.h>
 
 int		ft_strcmp(char *s1, char *s2);
 
