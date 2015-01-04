@@ -12,6 +12,7 @@
 
 #include "../ft_strlen/ft_strlen.c"
 #include "../ft_strcpy/ft_strcpy.c"
+#include <stdlib.h>
 
 char	*ft_strdup(char *s)
 {
