@@ -1,24 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/04 20:51:23 by yyang             #+#    #+#             */
-/*   Updated: 2015/01/04 22:46:26 by yyang            ###   ########.fr       */
+/*   Created: 2015/01/04 21:48:02 by yyang             #+#    #+#             */
+/*   Updated: 2015/01/04 22:03:06 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../ft_strlen/ft_strlen.c"
-#include "../ft_strcpy/ft_strcpy.c"
-#include <stdlib.h>
+#include "../ft_memcmp/ft_memcmp.c"
 
-char	*ft_strdup(char *s)
+char	*ft_strstr(char *s1, char *s2)
 {
-	char *d;
-
-	d = (char *)malloc(sizeof(char) * (ft_strlen(s) + 1));
-	ft_strcpy(d, s);
-	return (d);
+	while (*s1)
+	{
+		if (ft_memcmp(s1, s2, ft_strlen(s2)) == 0)
+			return (s1);
+		s1++;
+	}
+	return (NULL);
 }

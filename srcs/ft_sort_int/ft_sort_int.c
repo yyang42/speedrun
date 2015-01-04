@@ -1,16 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bubblesort.c                                    :+:      :+:    :+:   */
+/*   ft_sort_int.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: juschaef <juschaef@student.42.fr>          +#+  +:+       +#+        */
+/*   By: yyang <yyang@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/04 21:29:56 by juschaef          #+#    #+#             */
-/*   Updated: 2015/01/04 21:38:28 by juschaef         ###   ########.fr       */
+/*   Updated: 2015/01/04 22:08:31 by yyang            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	ft_bubblesort(int *tab, int size)
+void	ft_sort_int(int *tab, int size)
 {
 	int i;
 	int j;
