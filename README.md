@@ -2,7 +2,7 @@
 
 Le but du Speedrun est de vous entraîner à coder les fonctions de base rapidement et efficacement. Par exemple, coder un [strcat](https://github.com/yyang42/speedrun/blob/master/srcs/ft_strcat/ft_strcat.c) en moins de 20sec en 4 lignes, ou un [atoi](https://github.com/yyang42/speedrun/blob/master/srcs/ft_atoi/ft_atoi.c) en 30sec.
 
-```
+```c
 void	ft_strcat(char *s1, char *s2)
 {
 	while (*s1)
