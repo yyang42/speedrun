@@ -1,6 +1,6 @@
 ## [minirush] Speedrun: Comment coder deux fois plus vite en exam !
 
-Le but du Speedrun est de vous entrainer a coder les fonctions de base rapidement et efficacement. Par exemple, coder un [strcat](https://github.com/yyang42/speedrun/blob/master/srcs/ft_strcat/ft_strcat.c) en moins de 20sec en 2 lignes, ou un [atoi](https://github.com/yyang42/speedrun/blob/master/srcs/ft_atoi/ft_atoi.c) en 30sec.
+Le but du Speedrun est de vous entraîner à coder les fonctions de base rapidement et efficacement. Par exemple, coder un [strcat](https://github.com/yyang42/speedrun/blob/master/srcs/ft_strcat/ft_strcat.c) en moins de 20sec en 4 lignes, ou un [atoi](https://github.com/yyang42/speedrun/blob/master/srcs/ft_atoi/ft_atoi.c) en 30sec.
 
 ```
 void	ft_strcat(char *s1, char *s2)
@@ -23,8 +23,8 @@ void	ft_strcat(char *s1, char *s2)
 *12h15* Debrief Terre du milieu
 
 ## B. Déroulement pour chaque fonction.
-1. A tour de rôle, codez les fonctions de base (ci-dessous) le plus rapidement possible. Une personne code, l'autre chronometre.
-(Nous conseillons de le faire 3 fois par personne par fonction.)
+1. A tour de rôle, codez les fonctions de base (ci-dessous) le plus rapidement possible. Une personne code, l'autre chronomètre.
+(Nous conseillons de le faire 3 fois par personne et par fonction.)
 2. Notez votre temps sur le doc suivant: http://goo.gl/tBEO3f
 
 ## Fonctions
