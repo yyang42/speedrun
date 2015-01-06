@@ -13,9 +13,14 @@ void	ft_strcat(char *s1, char *s2)
 ```
 
 ## A. Consignes générales pour le minirush du 6 janvier
-1. Mettez-vous en binômes sur un seul poste.
-2. Commencez le training en choisisant les fonctions ci-dessous qui vous intéressent. C'est dans l'ordre croissant de difficulté. Nous conseillons de les faire dans l'ordre.
-3. Pour chaque fonction, suivez la consigne B.
+
+*10h15* Top chrono!
+
+- Mettez-vous en binômes sur un seul poste.
+- Commencez le training en choisisant les fonctions ci-dessous qui vous intéressent. C'est dans l'ordre croissant de difficulté. Nous conseillons de les faire dans l'ordre.
+- Pour chaque fonction, suivez la consigne B.
+
+*12h15* Debrief Terre du milieu
 
 ## B. Déroulement pour chaque fonction.
 1. A tour de rôle, codez les fonctions de base (ci-dessous) le plus rapidement possible. Une personne code, l'autre chronometre.
