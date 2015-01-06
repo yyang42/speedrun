@@ -28,6 +28,7 @@ void	ft_strcat(char *s1, char *s2)
 2. Notez votre temps sur le doc suivant: http://goo.gl/tBEO3f
 
 ## Fonctions
+Le code se trouve dans le dossier srcs/ de ce repertoire git.
 
 Niveau 1
 
